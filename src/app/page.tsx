@@ -1,4 +1,8 @@
-const Page = () => {
+
+
+const Page = async () => {
+
+
   return (
     <div className="mt-4">
       <h1>Home page content</h1>
