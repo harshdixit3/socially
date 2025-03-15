@@ -1,5 +1,6 @@
 import {currentUser} from "@clerk/nextjs/server";
 import CreatePost from "@/components/CreatePost";
+import WhoToFollow from "@/components/WhoToFollow";
 
 
 const Page = async () => {
@@ -10,7 +11,7 @@ const Page = async () => {
           {user ?  <CreatePost /> : null}
       </div>
         <div className="hidden lg:block lg:col-span-4 sticky top-20">
-            WhoToFollow
+            <WhoToFollow />
         </div>
     </div>
   );
