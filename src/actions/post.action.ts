@@ -50,12 +50,28 @@ export async function getPosts() {
                                 name:true,
                             }
                         }
+                    },
+                    orderBy: {
+                        createdAt: "asc"
+                    }
+                },
+                likes: {
+                    select:{
+                        userId: true
+                    }
+                },
+                _count: {
+                    select:{
+                        likes:true,
+                        comments:true
                     }
                 }
             }
 
-        })
+        });
+        return posts;
     }catch (error) {
-
+        console.error("Error in getPost",error);
+        throw new Error("Failed to get posts");
     }
 }
