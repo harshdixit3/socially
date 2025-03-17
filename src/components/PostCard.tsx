@@ -14,7 +14,10 @@ const PostCard = ({posts , dbUserId} : {posts : Post , dbUserId : string | null}
 
 
     return (
-        <div>PostCard</div>
+        <>
+            <div>PostCard</div>
+        </>
+
     )
 }
 export default PostCard
