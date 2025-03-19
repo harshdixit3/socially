@@ -26,7 +26,7 @@ const Page = async () => {
                   </div>
               </div>
               <div className="hidden lg:block lg:col-span-4 sticky top-20">
-                  {/*<WhoToFollow />*/}
+                  <WhoToFollow />
               </div>
           </div>
       </>
