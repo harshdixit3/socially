@@ -28,6 +28,7 @@ function MobileNavbar() {
   const { theme, setTheme } = useTheme();
 
   return (
+      <>
     <div className="flex md:hidden items-center space-x-2">
       <Button
         variant="ghost"
@@ -105,6 +106,7 @@ function MobileNavbar() {
         </SheetContent>
       </Sheet>
     </div>
+      </>
   );
 }
 

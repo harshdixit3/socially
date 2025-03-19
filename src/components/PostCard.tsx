@@ -72,6 +72,7 @@ function PostCard({ post, dbUserId }: { post: Post; dbUserId: string | null }) {
     };
 
     return (
+        <>
         <Card className="overflow-hidden">
             <CardContent className="p-4 sm:p-6">
                 <div className="space-y-4">
@@ -227,6 +228,7 @@ function PostCard({ post, dbUserId }: { post: Post; dbUserId: string | null }) {
                 </div>
             </CardContent>
         </Card>
+        </>
     );
 }
 export default PostCard;
