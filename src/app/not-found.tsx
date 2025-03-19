@@ -5,6 +5,7 @@ import { HomeIcon, ArrowLeftIcon } from "lucide-react";
 
 export default function NotFound() {
     return (
+        <>
         <div className="min-h-[80vh] grid place-items-center px-4">
             <Card className="w-full max-w-md">
                 <CardContent className="pt-6">
@@ -38,5 +39,6 @@ export default function NotFound() {
                 </CardContent>
             </Card>
         </div>
+        </>
     );
 }
