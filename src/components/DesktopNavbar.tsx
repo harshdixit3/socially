@@ -1,3 +1,5 @@
+"use server"
+
 import { BellIcon, HomeIcon, UserIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
